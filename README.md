@@ -13,7 +13,7 @@ You are not required to complete it on the lambda server (although you are welco
 
 **Data:**
 
-The `data` folder contains two files that store example "web graphs".
+The `data` folder contains two files that store example  "web graphs".
 The file `small.csv.gz` contains the example graph from the *Deeper Inside Pagerank* paper.
 This is a small graph, so we can manually inspect the contents of this file with the following command:
 ```
