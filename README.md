@@ -414,13 +414,59 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    Task 1, part 1:
    ```
    $ python3 pagerank.py --data=data/small.csv.gz --verbose
+    DEBUG:root:computing indices
+    DEBUG:root:computing values
+    DEBUG:root:i=0 residual=0.2562914192676544
+    DEBUG:root:i=1 residual=0.11841227114200592
+    DEBUG:root:i=2 residual=0.07070134580135345
+    DEBUG:root:i=3 residual=0.03181542828679085
+    DEBUG:root:i=4 residual=0.020496590062975883
+    DEBUG:root:i=5 residual=0.01010835450142622
+    DEBUG:root:i=6 residual=0.006371544674038887
+    DEBUG:root:i=7 residual=0.0034227892756462097
+    DEBUG:root:i=8 residual=0.002087961183860898
+    DEBUG:root:i=9 residual=0.0011749734403565526
+    DEBUG:root:i=10 residual=0.0007012754795141518
+    DEBUG:root:i=11 residual=0.00040320929838344455
+    DEBUG:root:i=12 residual=0.00023798426263965666
+    DEBUG:root:i=13 residual=0.00013812065299134701
+    DEBUG:root:i=14 residual=8.108324982458726e-05
+    DEBUG:root:i=15 residual=4.7269360948121175e-05
+    DEBUG:root:i=16 residual=2.7704918466042727e-05
+    DEBUG:root:i=17 residual=1.6170568414963782e-05
+    DEBUG:root:i=18 residual=9.479118489252869e-06
+    DEBUG:root:i=19 residual=5.4782999541203026e-06
+    DEBUG:root:i=20 residual=3.2123323308042018e-06
+    DEBUG:root:i=21 residual=1.8802053318722756e-06
+    DEBUG:root:i=22 residual=1.1228398761886638e-06
+    DEBUG:root:i=23 residual=6.322027275018627e-07
+    INFO:root:rank=0 pagerank=6.6270e-01 url=4
+    INFO:root:rank=1 pagerank=5.2179e-01 url=6
+    INFO:root:rank=2 pagerank=4.1434e-01 url=5
+    INFO:root:rank=3 pagerank=2.3175e-01 url=2
+    INFO:root:rank=4 pagerank=1.8590e-01 url=3
+    INFO:root:rank=5 pagerank=1.6917e-01 url=1
+
+   
    ```
 
    Task 1, part 2:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='corona'
+    INFO:root:rank=0 pagerank=1.0038e-03 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
+    INFO:root:rank=1 pagerank=8.9224e-04 url=www.lawfareblog.com/house-oversight-committee-holds-day-two-hearing-government-coronavirus-response
+    INFO:root:rank=2 pagerank=7.0390e-04 url=www.lawfareblog.com/britains-coronavirus-response
+    INFO:root:rank=3 pagerank=6.9153e-04 url=www.lawfareblog.com/prosecuting-purposeful-coronavirus-exposure-terrorism
+    INFO:root:rank=4 pagerank=6.7041e-04 url=www.lawfareblog.com/israeli-emergency-regulations-location-tracking-coronavirus-carriers
+    INFO:root:rank=5 pagerank=6.6256e-04 url=www.lawfareblog.com/why-congress-conducting-business-usual-face-coronavirus
+    INFO:root:rank=6 pagerank=6.5046e-04 url=www.lawfareblog.com/congressional-homeland-security-committees-seek-ways-support-state-federal-responses-coronavirus
+    INFO:root:rank=7 pagerank=6.3620e-04 url=www.lawfareblog.com/paper-hearing-experts-debate-digital-contact-tracing-and-coronavirus-privacy-concerns
+    INFO:root:rank=8 pagerank=6.1248e-04 url=www.lawfareblog.com/house-subcommittee-voices-concerns-over-us-management-coronavirus
+    INFO:root:rank=9 pagerank=6.0187e-04 url=www.lawfareblog.com/livestream-house-oversight-committee-holds-hearing-government-coronavirus-response
+   
 
-   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='Trump'
+   $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='Trump'  
+f
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --search_query='Iran'
    ```
@@ -428,8 +474,29 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
    Task 1, part 3:
    ```
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz
+    INFO:root:rank=0 pagerank=2.8741e-01 url=www.lawfareblog.com/lawfare-job-board
+    INFO:root:rank=1 pagerank=2.8741e-01 url=www.lawfareblog.com/masthead
+    INFO:root:rank=2 pagerank=2.8741e-01 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
+    INFO:root:rank=3 pagerank=2.8741e-01 url=www.lawfareblog.com/documents-related-mueller-investigation
+    INFO:root:rank=4 pagerank=2.8741e-01 url=www.lawfareblog.com/topics
+    INFO:root:rank=5 pagerank=2.8741e-01 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
+    INFO:root:rank=6 pagerank=2.8741e-01 url=www.lawfareblog.com/snowden-revelations
+    INFO:root:rank=7 pagerank=2.8741e-01 url=www.lawfareblog.com/support-lawfare
+    INFO:root:rank=8 pagerank=2.8741e-01 url=www.lawfareblog.com/upcoming-events
+    INFO:root:rank=9 pagerank=2.8741e-01 url=www.lawfareblog.com/our-comments-policy
 
    $ python3 pagerank.py --data=data/lawfareblog.csv.gz --filter_ratio=0.2
+    INFO:root:rank=0 pagerank=3.4696e-01 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
+    INFO:root:rank=1 pagerank=2.9521e-01 url=www.lawfareblog.com/livestream-nov-21-impeachment-hearings-0
+    INFO:root:rank=2 pagerank=2.9040e-01 url=www.lawfareblog.com/opening-statement-david-holmes
+    INFO:root:rank=3 pagerank=1.5179e-01 url=www.lawfareblog.com/lawfare-podcast-ben-nimmo-whack-mole-game-disinformation
+    INFO:root:rank=4 pagerank=1.5099e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1963
+    INFO:root:rank=5 pagerank=1.5099e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1964
+    INFO:root:rank=6 pagerank=1.5071e-01 url=www.lawfareblog.com/lawfare-podcast-week-was-impeachment
+    INFO:root:rank=7 pagerank=1.4957e-01 url=www.lawfareblog.com/todays-headlines-and-commentary-1962
+    INFO:root:rank=8 pagerank=1.4367e-01 url=www.lawfareblog.com/cyberlaw-podcast-mistrusting-google
+    INFO:root:rank=9 pagerank=1.4240e-01 url=www.lawfareblog.com/lawfare-podcast-bonus-edition-gordon-sondland-vs-committee-no-bull
+   
    ```
 
    Task 1, part 4:
