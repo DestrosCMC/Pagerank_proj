@@ -755,6 +755,7 @@ Your goal should be to discover what topics that www.lawfareblog.com considers t
     DEBUG:root:i=1 residual=4.125228404998779
     DEBUG:root:i=2 residual=3.987910032272339
     DEBUG:root:i=3 residual=3.2539920806884766
+    ...
     DEBUG:root:i=998 residual=3.0866136512486264e-05
     DEBUG:root:i=999 residual=2.813212813634891e-05
     INFO:root:rank=0 ranking=5.2385e+01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
