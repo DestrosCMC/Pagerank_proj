@@ -410,7 +410,9 @@ For example, find out what articles are important to the `iran` topic but do not
 Your goal should be to discover what topics that www.lawfareblog.com considers to be related to the national security topic you choose.
 -->
 
-## Submission
+## Submission  
+
+### **These commands are all the output of running word2vecpagerank.py not the normal pagerank.py file**
 
 1. Create a new repo on github (not a fork of this repo).
 
